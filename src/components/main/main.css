@@ -1,0 +1,153 @@
+.header_box{
+    width: 100%;
+}
+
+.header_content{
+    width: 600px;
+    padding: 0.5rem 0.8rem;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom,#351400,#da8303,#351400);
+    display: flex;
+    margin:0 auto;
+}
+
+.header_content .img1{
+    width: 30%;
+}
+
+.header_content .img2{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_content .img1 img{
+    width: 125px;
+}
+.header_content .img2 img{
+    width: 250px;
+}
+
+.footer_box{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    right:0;
+    padding: 0.8rem;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #2d0c00da;
+    width: 600px;
+    margin:0 auto;
+}
+
+.footer_box div:nth-of-type(1){
+    width: 20%;
+}
+
+.footer_box div:nth-of-type(1) img{
+    width: 5rem;
+}
+
+.footer_box div:nth-of-type(2){
+    width: 40%;
+    flex-direction: column;
+    text-align: center;
+    color:#feec9a;
+}
+
+.footer_box div:nth-of-type(3){
+    width: 40%;
+}
+
+.footer_box div:nth-of-type(3) img{
+    width: 10rem;
+}
+
+.main-box{
+    width: 600px;
+    margin:0 auto;
+    padding-bottom: 120px;
+}
+
+.main-box h5{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    margin:1rem 0;
+}
+
+.main-box .game-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-box .items{
+    width: 20%;
+    margin-left: 1rem;
+}
+
+.btn-transition{
+    transition: all 0.5s;
+    border-radius: 30px;
+}
+
+.btn-transition:hover{
+    transform: scale(0.98);
+}
+
+.btn-transition:active{
+    box-shadow: 2px 2px 100px rgb(255,255,255);
+}
+
+.football{
+    width: 600px;
+    height: 280px;
+    padding:20px;
+    margin:0 auto;
+    margin-bottom: 7.5rem;
+    background:linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1)), url(../../Image/footballbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.football .saba, .football .sbo{
+    width: 250px;
+}
+
+
+@media (max-width:600px) {
+    .header_content .img1 img{
+        width: 90px;
+    }
+    .header_content .img2 img{
+        width: 170px;
+    }
+    .footer_box h4{
+        font-size: 0.8rem;
+    }
+    .footer_box p{
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:550px) {
+    .header_content, .footer_box, .main-box, .football{
+        width: 100%;
+    }
+}
+
+@media (max-width:390px) {
+    .footer_box h4, .footer_box p{
+        display: none;
+    }
+}
